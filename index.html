@@ -11,7 +11,7 @@
   <title>BizzLand</title>
 </head>
 
-<body>
+<body id="home" class="scrollspy">
   <header class="main-header">
     <div class="primary-overlay">
       <div class="navbar-fixed">
@@ -125,15 +125,187 @@
     </div>
   </section>
 
+  <!--Section: About-->
+  <section id="about" class="section section-about grey lighten-3 center scrollspy">
+    <div class="container">
+      <h2>About BizLand</h2>
+      <p class="flow-text">Lorem ipsum dolor sit amet consectetur adipisicing 
+        elit. Aperiam totam facere incidunt explicabo temporibus facilis 
+        deleniti numquam sed aliquid minus.
+      </p>
+      <div class="row">
+        <div class="col s12 m6">
+          <img src="img/people.jpg" alt="" class="responsive-img circle">
+        </div>
+
+        <div class="col s12 m5 offset-m1">
+          <br>
+          <ul class="collection with-header z-depth-4">
+            <li class="collection-header">
+              <h5>Services</h5>
+            </li>
+            <li class="collection-item">
+              <i class="material-icons left">check</i>Business Consultation
+            </li>
+            <li class="collection-item">
+              <i class="material-icons left">check</i>Financial Analytics
+            </li>
+            <li class="collection-item">
+              <i class="material-icons left">check</i>Security Services
+            </li>
+            <li class="collection-item">
+              <i class="material-icons left">check</i>Marketing & Advertising
+            </li>
+            <li class="collection-item">
+              <i class="material-icons left">check</i>Internet Services
+            </li>
+            <li class="collection-item">
+              <i class="material-icons left">check</i>Accounting
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Section: Testimonials-->
+  <section id="testimonials" class="section section-testimonials blue white-text center scrollspy">
+    <div class="container">
+      <h2>What Our Clients Say</h2>
+      <div class="row">
+
+        <div class="col s12 m4">
+          <div class="card grey lighten-4 black-text z-depth-4">
+            <div class="card-content">
+              <p>
+                <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Vitae voluptatum assumenda explicabo doloribus ratione 
+                  ducimus vel architecto minima recusandae laboriosam!</em>
+              </p>
+            </div>
+            <div class="card-action">
+              <p>Johnny Donnie from ABC, INC</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+            <div class="card grey lighten-4 black-text z-depth-4">
+              <div class="card-content">
+                <p>
+                  <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Vitae voluptatum assumenda explicabo doloribus ratione 
+                    ducimus vel architecto minima recusandae laboriosam!</em>
+                </p>
+              </div>
+              <div class="card-action">
+                <p>Sharon Johnson from XYZ, INC</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="col s12 m4">
+            <div class="card grey lighten-4 black-text z-depth-4">
+              <div class="card-content">
+                <p>
+                  <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Vitae voluptatum assumenda explicabo doloribus ratione 
+                    ducimus vel architecto minima recusandae laboriosam!</em>
+                </p>
+              </div>
+              <div class="card-action">
+                <p>Bruce Wayne from 123, INC</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Section: Contact-->
+  <section id="contact" class="section section-contact center scrollspy">
+    <div id="googlemap">  </div>
+      <div class="conatiner">
+        <div class="row">
+          <div class="col s12 m6 offset-m6">
+            <div class="card-panel z-depth-5">
+              <h4>Contact Us</h4>
+              <div class="input-field">
+                <input type="text" id="home" placeholder="Name">
+                <label for="name">Name</label>
+              </div>
+              <div class="input-field">
+                  <input type="email" id="email" placeholder="Email">
+                  <label for="email">Email</label>
+              </div>
+              <div class="input-field">
+                  <input type="text" id="phone" placeholder="Phone">
+                  <label for="phone">Phone</label>
+              </div>
+              <div class="input-field">
+                  <textarea class="materialize-textarea" id="message" placeholder="Message"></textarea>
+                  <label for="message">Message</label>
+              </div>
+              <input type="submit" value="Submit" class="btn blue-grey">
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+  <!--footer-->
+  <div class="page-footer blue-grey darken-1">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 l6">
+          <h5>Location</h5>
+          <p >BizzLand Inc.</p>
+          <p>Beach Raod, Second Aavenue, Royal Park</p>
+        </div>
+
+        <div class="col s12 l4 offfset l2">
+          <h5 class="white-text">Links</h5>
+          <ul>
+              <li>
+                  <a class="white-text" href="#home">Home</a>
+                </li>
+              <li>
+                <a class="white-text" href="#about">About</a>
+              </li>
+              <li>
+                <a class="white-text" href="#testimonials">Testimonials</a>
+              </li>
+              <li>
+                <a class="white-text" href="#contact">Contact</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright blue-grey darken-4">
+      <div class="container">
+        BizzLand @ 2019
+        <a href="#!" class="grey-text text-lighten-4 right">
+          <i class="material-icons left">keyboard_arrow_up</i> Back to Top
+        </a>
+      </div>
+    </div>
+  </div>
+
   
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="http://maps.googleapis.com/maps/api/js"></script>
 
   <script>
     $(document).ready(function () {
       
       //init sidenav
       $('.button-collapse').sideNav();
+
+      //init scrollspy
+      $('.scrollspy').scrollSpy();
 
       //scrollFire
       const options = [
@@ -151,6 +323,39 @@
       ];
 
       Materialize.scrollFire(options);
+
+      //google maps
+      const position = [42.361145, -71.057083];
+      const centerPosition = [42.377815, -70.981133];
+
+      function showGoogleMaps(){
+        //map positions
+        const latLng = new google.maps.LatLng(position[0], position[1]);
+        const centerLatLng = new google.maps.LatLng(centerPosition[0], centerPosition[1]);
+        
+        //map options
+        const mapOptions = {
+          zoom: 12,
+          streetViewControl: false,
+          scaleControl: true,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          center: centerLatLng
+        }
+        
+        //create map
+        map = new google.maps.Map(document.getElementById('googlemap'),mapOptions);
+
+        //Show Marker
+        marker = new google.maps.Marker({
+          position: latLng,
+          map: map,
+          draggable: false,
+          animation: google.maps.Animation.DROP
+        });
+      }
+
+      //Maps Event
+      google.maps.event.addDomListener(window, 'load', showGoogleMaps);
 
     });
   </script>
