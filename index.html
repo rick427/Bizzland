@@ -12,13 +12,146 @@
 </head>
 
 <body>
-  
+  <header class="main-header">
+    <div class="primary-overlay">
+      <div class="navbar-fixed">
+        <nav class="transparent">
+          <div class="container">
+            <div class="nav-wrapper">
+              <a href="#home" class="brand-logo">BizzLand</a>
+              <a href="#" data-activates="mobile-nav" class="button-collapse">
+                <i class="material-icons">menu</i>
+              </a>
+              <ul class="right hide-on-med-and-down">
+                <li>
+                  <a href="#home">Home</a>
+                </li>
+                <li>
+                  <a href="#about">About</a>
+                </li>
+                <li>
+                  <a href="#testimonials">Testimonials</a>
+                </li>
+                <li>
+                  <a href="#contact">Contact</a>
+                </li>
+                <li>
+                  <a href="#" class="btn blue">Download</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
 
+      <!--Sidenav-->
+      <ul class="side-nav" id="mobile-nav">
+        <h4 class="blue-grey darken-3 center">BizzLand</h4>
+        <li>
+          <div class="divider"></div>
+        </li>
+
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#testimonials">Testimonials</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+
+      <!--Showcase-->
+      <div class="showcase container">
+        <div class="row">
+          <div class="col s12 main-text">
+            <h5>You found the...</h5>
+            <h1>Right Place To Start</h1>
+            <p class="flow-text">To take your business to the next level with our
+              services that have taken companies to the fortune 500</p>
+              <br>
+              <a href="#about" class="btn btn-large white black-text">Learn More</a>
+              <a href="#contact" class="white-text">
+                <i class="material-icons medium scroll-icon">arrow_drop_down_circle</i>
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--Section: Boxes-->
+  <section class="section-boxes center">
+    <div class="row">
+      <div class="col s12 m6 l3 blue white-text box">
+        <i class="material-icons medium">show_chart</i>
+          <h4>Grow your Business</h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Velit consequuntur cupiditate odio deserunt nihil necessitatibus 
+            iusto delectus architecto libero quae.
+          </p>
+      </div>
+
+      <div class="col s12 m6 l3 purple white-text box">
+        <i class="material-icons medium">people</i>
+          <h4>Professional Advisors</h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Velit consequuntur cupiditate odio deserunt nihil necessitatibus 
+            iusto delectus architecto libero quae.
+          </p>
+      </div>
+
+      <div class="col s12 m6 l3 teal white-text box">
+        <i class="material-icons medium">verified_user</i>
+          <h4>Secure Your Company</h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Velit consequuntur cupiditate odio deserunt nihil necessitatibus 
+            iusto delectus architecto libero quae.
+          </p>
+      </div>
+
+      <div class="col s12 m6 l3 amber darken-4 white-text box">
+        <i class="material-icons medium">account_balance</i>
+          <h4>Multiply Your Income</h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Velit consequuntur cupiditate odio deserunt nihil necessitatibus 
+            iusto delectus architecto libero quae.
+          </p>
+      </div>
+    </div>
+  </section>
+
+  
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
+
   <script>
     $(document).ready(function () {
       
+      //init sidenav
+      $('.button-collapse').sideNav();
+
+      //scrollFire
+      const options = [
+        {
+          selector: '.main-text', offset: 0, callback: function(el){
+            Materialize.fadeInImage($(el));
+          }
+        },
+        {
+          selector: '.navbar-fixed', offset: 1500, callback: function(){
+            $('nav').removeClass('transparent')
+            $('nav').addClass('blue-grey darken-3');
+          }
+        }
+      ];
+
+      Materialize.scrollFire(options);
+
     });
   </script>
 </body>
